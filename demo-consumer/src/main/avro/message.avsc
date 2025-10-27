@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "name": "MessageDto",
+  "namespace": "com.example.demo.avro.dto",
+  "fields": [
+    {"name": "count", "type": "int"},
+    {"name": "content", "type": "string"}
+  ]
+}

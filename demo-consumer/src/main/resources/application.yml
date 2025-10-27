@@ -1,0 +1,15 @@
+spring.application.name: demo
+
+demo:
+  kafka:
+    bootstrap-servers: "http://localhost:9092"
+    schema.registry.url: "http://localhost:8081"
+    value.serializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+    key.serializer: org.apache.kafka.common.serialization.StringDeserializer
+
+    consumer:
+      auto.offset.reset.config: "earliest"
+
+    topic: "demo_topic"
+    group: "group_1"
+
